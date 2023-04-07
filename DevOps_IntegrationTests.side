@@ -1,0 +1,490 @@
+{
+  "id": "777adc6b-fdf3-4fa2-befb-8a1ce4740641",
+  "version": "2.0",
+  "name": "DevOps_IntegrationTests",
+  "url": "https://www.google.ch",
+  "tests": [{
+    "id": "a9a486c4-ddcb-4ca0-a126-3eae14f9ce9c",
+    "name": "Google DevOps",
+    "commands": [{
+      "id": "6a3bb023-a8ee-488a-8b12-ba686fa18dfa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e89f0ef-170a-4f32-9b66-a61d2074302c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x878",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b22e7249-fc94-48ab-b8e0-e12472fcb292",
+      "comment": "",
+      "command": "click",
+      "target": "css=#W0wltc > .QS5gu",
+      "targets": [
+        ["css=#W0wltc > .QS5gu", "css:finder"],
+        ["xpath=//button[@id='W0wltc']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b16960e-1da9-4b56-b3f8-a0b614da48fc",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "wikipedia devops"
+    }, {
+      "id": "8a2f62b5-391f-443f-a3b2-5a526ecdaa60",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "18f105fb-c000-4c60-944b-dfd8ae8c74b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g > div > div > .kvH3mc .LC20lb",
+      "targets": [
+        ["css=.g > div > div > .kvH3mc .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'DevOps - Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "516885cf-f39a-473f-a255-e0fc7c2cc348",
+    "name": "Google DevOps2",
+    "commands": [{
+      "id": "f190b46b-541b-4e8a-ae1b-b3fd11467ba9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "507106d7-b49d-4b14-8333-cce61f2d8015",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "747x779",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0996864c-b7c2-4e51-a204-de3c551dbf98",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "wikipedia devops"
+    }, {
+      "id": "acab6232-bcaa-4fd9-a8c3-0f4eff2a4a64",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0f73c2a2-093a-4355-b3b9-6ffcab80f745",
+      "comment": "",
+      "command": "click",
+      "target": "css=.g > div > div > .kvH3mc .LC20lb",
+      "targets": [
+        ["css=.g > div > div > .kvH3mc .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'DevOps - Wikipedia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a72b9bc-39d2-48e2-aba0-a29624b32bc9",
+      "comment": "Check if richtige Webseite",
+      "command": "assertElementPresent",
+      "target": "css=.mw-page-title-main",
+      "targets": [
+        ["css=.mw-page-title-main", "css:finder"],
+        ["xpath=//h1[@id='firstHeading']/span", "xpath:idRelative"],
+        ["xpath=//h1/span", "xpath:position"],
+        ["xpath=//span[contains(.,'DevOps')]", "xpath:innerText"]
+      ],
+      "value": "DevOps"
+    }]
+  }, {
+    "id": "02cf0086-9008-4942-bcc0-e9f838193fbd",
+    "name": "ZHAW Formular",
+    "commands": [{
+      "id": "a889b975-d807-42b8-a4f1-4e7926a91758",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98fdc5f4-02ad-47c1-87fa-bf4240f3a9db",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x844",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e6617bb-e0fb-4a46-8ec2-c5160820f559",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "zhaw engineering broschüre bestellen"
+    }, {
+      "id": "01892bc8-d106-4d34-9738-295aab412bac",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7f7b3416-da81-418e-b4e5-b4379c415249",
+      "comment": "",
+      "command": "click",
+      "target": "css=#rso > .MjjYud:nth-child(1) .LC20lb",
+      "targets": [
+        ["css=#rso > .MjjYud:nth-child(1) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Broschüren bestellen | ZHAW School of Engineering')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "851d50af-ac74-4e2a-8668-d4de20112210",
+      "comment": "",
+      "command": "click",
+      "target": "id=powermail_field_ichinteressieremichfr_4",
+      "targets": [
+        ["id=powermail_field_ichinteressieremichfr_4", "id"],
+        ["css=#powermail_field_ichinteressieremichfr_4", "css:finder"],
+        ["xpath=//input[@id='powermail_field_ichinteressieremichfr_4']", "xpath:attributes"],
+        ["xpath=//div[@id='powermail_fieldwrap_443']/fieldset/div/div[4]/label/input", "xpath:idRelative"],
+        ["xpath=//div[4]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fba9c088-6ad2-405f-84a1-be6d6bfeb0cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=powermail_field_ichinteressieremichfr_7",
+      "targets": [
+        ["id=powermail_field_ichinteressieremichfr_7", "id"],
+        ["css=#powermail_field_ichinteressieremichfr_7", "css:finder"],
+        ["xpath=//input[@id='powermail_field_ichinteressieremichfr_7']", "xpath:attributes"],
+        ["xpath=//div[@id='powermail_fieldwrap_443']/fieldset/div/div[7]/label/input", "xpath:idRelative"],
+        ["xpath=//div[7]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2868e37c-39a6-476c-9539-f70c0214c044",
+      "comment": "",
+      "command": "click",
+      "target": "id=powermail_field_zustzlichmchteichunterlagenzu01_3",
+      "targets": [
+        ["id=powermail_field_zustzlichmchteichunterlagenzu01_3", "id"],
+        ["css=#powermail_field_zustzlichmchteichunterlagenzu01_3", "css:finder"],
+        ["xpath=//input[@id='powermail_field_zustzlichmchteichunterlagenzu01_3']", "xpath:attributes"],
+        ["xpath=//div[@id='powermail_fieldwrap_444']/fieldset/div/div[3]/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/fieldset/div/div[3]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0460009a-2cc4-4877-9381-ae2dc9fe90fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=powermail_field_marker_2",
+      "targets": [
+        ["id=powermail_field_marker_2", "id"],
+        ["css=#powermail_field_marker_2", "css:finder"],
+        ["xpath=//input[@id='powermail_field_marker_2']", "xpath:attributes"],
+        ["xpath=//div[@id='c13957']/div/form/fieldset[2]/div/fieldset/div/div[2]/label/input", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/div/fieldset/div/div[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9855fe98-087b-4b6a-821a-d2868cd3031b",
+      "comment": "",
+      "command": "click",
+      "target": "id=powermail_field_vorname",
+      "targets": [
+        ["id=powermail_field_vorname", "id"],
+        ["name=tx_powermail_pi1[field][vorname]", "name"],
+        ["css=#powermail_field_vorname", "css:finder"],
+        ["xpath=//input[@id='powermail_field_vorname']", "xpath:attributes"],
+        ["xpath=//div[@id='c13957']/div/form/fieldset[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ecbe896-f206-4515-baa4-08a3c7819aaf",
+      "comment": "",
+      "command": "type",
+      "target": "id=powermail_field_vorname",
+      "targets": [
+        ["id=powermail_field_vorname", "id"],
+        ["name=tx_powermail_pi1[field][vorname]", "name"],
+        ["css=#powermail_field_vorname", "css:finder"],
+        ["xpath=//input[@id='powermail_field_vorname']", "xpath:attributes"],
+        ["xpath=//div[@id='c13957']/div/form/fieldset[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Alexander"
+    }, {
+      "id": "39d155a1-d153-49ff-b645-131f47c51762",
+      "comment": "",
+      "command": "type",
+      "target": "id=powermail_field_name",
+      "targets": [
+        ["id=powermail_field_name", "id"],
+        ["name=tx_powermail_pi1[field][name]", "name"],
+        ["css=#powermail_field_name", "css:finder"],
+        ["xpath=//input[@id='powermail_field_name']", "xpath:attributes"],
+        ["xpath=//div[@id='c13957']/div/form/fieldset[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Petermaier"
+    }, {
+      "id": "525e83e1-94ed-4e36-b908-66bc889ebd55",
+      "comment": "",
+      "command": "type",
+      "target": "id=powermail_field_strasseundhausnummer",
+      "targets": [
+        ["id=powermail_field_strasseundhausnummer", "id"],
+        ["name=tx_powermail_pi1[field][strasseundhausnummer]", "name"],
+        ["css=#powermail_field_strasseundhausnummer", "css:finder"],
+        ["xpath=//input[@id='powermail_field_strasseundhausnummer']", "xpath:attributes"],
+        ["xpath=//div[@id='c13957']/div/form/fieldset[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "St. Georgenplatz 2"
+    }, {
+      "id": "7356900e-2060-48ab-9b77-40b5a43ec41d",
+      "comment": "",
+      "command": "type",
+      "target": "id=powermail_field_plz",
+      "targets": [
+        ["id=powermail_field_plz", "id"],
+        ["name=tx_powermail_pi1[field][plz]", "name"],
+        ["css=#powermail_field_plz", "css:finder"],
+        ["xpath=//input[@id='powermail_field_plz']", "xpath:attributes"],
+        ["xpath=//div[@id='c13957']/div/form/fieldset[2]/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "8400"
+    }, {
+      "id": "01d20d01-e184-4462-98f3-31ad0bcf6c9b",
+      "comment": "",
+      "command": "type",
+      "target": "id=powermail_field_ort",
+      "targets": [
+        ["id=powermail_field_ort", "id"],
+        ["name=tx_powermail_pi1[field][ort]", "name"],
+        ["css=#powermail_field_ort", "css:finder"],
+        ["xpath=//input[@id='powermail_field_ort']", "xpath:attributes"],
+        ["xpath=//div[@id='c13957']/div/form/fieldset[2]/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "Winterthur"
+    }, {
+      "id": "92581333-2fac-40d9-9849-8d0848b77788",
+      "comment": "",
+      "command": "type",
+      "target": "id=powermail_field_email",
+      "targets": [
+        ["id=powermail_field_email", "id"],
+        ["name=tx_powermail_pi1[field][email]", "name"],
+        ["css=#powermail_field_email", "css:finder"],
+        ["xpath=//input[@id='powermail_field_email']", "xpath:attributes"],
+        ["xpath=//div[@id='c13957']/div/form/fieldset[2]/div[7]/input", "xpath:idRelative"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "peteral2@students.zhaw.ch"
+    }, {
+      "id": "fa353c56-6536-4023-964c-d60c5e6e13d9",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "id=powermail_field_ichinteressieremichfr_4",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc8b8ec5-dbb9-4b06-9d8c-6cfc1d962010",
+      "comment": "",
+      "command": "assertChecked",
+      "target": "id=powermail_field_ichinteressieremichfr_7",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8aad07e-3e79-46b4-bb9d-1f71c9161fc4",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=powermail_field_vorname",
+      "targets": [],
+      "value": "Alexander"
+    }, {
+      "id": "733ee1fe-5e72-4b06-ba76-4418986c1c39",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=powermail_field_email",
+      "targets": [],
+      "value": "peteral2@students.zhaw.ch"
+    }]
+  }, {
+    "id": "126eb7d7-2fc7-4acf-8c4d-6b39ff2331f5",
+    "name": "Assert Prompt",
+    "commands": [{
+      "id": "8073046d-1e08-41af-9417-57ea50948f21",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf792b23-1a07-44f8-ac99-0c0ca20080f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x878",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8aec7965-2328-4d51-8962-170f1210e187",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "omayo (QAFox.com) "
+    }, {
+      "id": "79066afc-213b-4295-a057-003aa977bce9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8a1e30ba-335f-495e-b0af-eacad074ec64",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Page One",
+      "targets": [
+        ["linkText=Page One", "linkText"],
+        ["css=.dmenKe .l", "css:finder"],
+        ["xpath=//a[contains(text(),'Page One')]", "xpath:link"],
+        ["xpath=//div[@id='rso']/div/div/div/table/tbody/tr/td/div/h3/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://omayo.blogspot.com/2013/05/page-one.html']", "xpath:href"],
+        ["xpath=//h3/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Page One')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e81e6f8-22e9-451c-9862-4da10fb63da0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tF2Cxc > .yuRUbf .LC20lb",
+      "targets": [
+        ["css=.tF2Cxc > .yuRUbf .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'omayo (QAFox.com)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "276473fd-edbe-4c3a-899e-a78b2f2e987e",
+      "comment": "",
+      "command": "answerOnNextPrompt",
+      "target": "John",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f503996-5fab-495b-856e-226601752f40",
+      "comment": "",
+      "command": "click",
+      "target": "id=prompt",
+      "targets": [
+        ["id=prompt", "id"],
+        ["css=#prompt", "css:finder"],
+        ["xpath=//input[@id='prompt']", "xpath:attributes"],
+        ["xpath=//div[@id='HTML18']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/aside/div/div[7]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc1391a-186b-4d45-a739-deb7b9c2fc4f",
+      "comment": "",
+      "command": "assertPrompt",
+      "target": "What is your name?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5e93b15-2ef1-4acc-8d28-7dfc573d42b3",
+      "comment": "",
+      "command": "webdriverAnswerOnVisiblePrompt",
+      "target": "John",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82260c57-bd0d-4910-9873-f16820784037",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f06e7fe7-07d0-4523-b667-7281813924e6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a9a486c4-ddcb-4ca0-a126-3eae14f9ce9c"]
+  }],
+  "urls": ["https://www.google.ch/"],
+  "plugins": []
+}
